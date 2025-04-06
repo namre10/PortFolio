@@ -37,6 +37,8 @@ app.use(
   }),
 );
 
+app.use('/assets', express.static(resolve(browserDistFolder, 'assets')));
+
 /**
  * Handle all other requests by rendering the Angular application.
  */

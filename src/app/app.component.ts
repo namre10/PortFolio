@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from "./header/header.component";
+import { NavComponent } from "./nav/nav.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet, HeaderComponent, NavComponent]
 })
+
 export class AppComponent {
   title = 'Protfolio_Angular';
 }
